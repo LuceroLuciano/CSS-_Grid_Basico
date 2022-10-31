@@ -1,0 +1,138 @@
+.contenedor {
+    border: 5px solid #e1bee7;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 75px 75px 75px;
+    place-content: center;
+}
+
+.item {
+    font-size: 4rem;
+}
+
+.item-1 {
+    border: 5px solid #f8bbd0;
+    background-color: #ffeeff;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.item-2 {
+    border: 5px solid #b6648b;
+    background-color: #ccb5cc;
+    grid-row: 2 / 4;
+}
+
+.item-3 {
+    border: 5px solid #7a8fdd;
+    background-color: #72a8d4;
+    grid-area: 2 / 2 / 4 / 4;
+}
+
+/* *********************************************
+     CSS para Grid template - 2do ejercicio 
+     usadndo grid-area
+    ********************************************
+*/
+.contenedor2 {
+    border: 5px solid #e1bee7;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 75px 75px 75px;    
+    /*Declaramos areas dentro de la grilla*/
+    grid-template-areas: 
+        "header header header"
+        "side main main"
+        "side main main";
+    place-content: center;
+}
+
+.item-second {
+    font-size: 4rem;
+}
+
+.itemSecond-1 {
+    border: 5px solid #df78df;
+    background-color: red;
+    grid-area: header;
+}
+
+.itemSecond-2 {
+    border: 5px solid #7a8fdd;
+    background-color: blue;
+    grid-area: side;
+}
+
+.itemSecond-3 {
+    border: 5px solid #f68122;
+    background-color: yellow;
+    grid-area: main;
+}
+
+
+/* ******************************************
+    CSS del reto Grid Area 
+**********************************************/
+
+.contenedorPrincipal {
+    background-color: #ffeeff;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    place-content: center;
+    grid-template-areas: 
+        "container1 container2 container2"
+        "container3 container3 container4"
+        "container5 container6 container7";
+}
+
+.item-contenedor {
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(204, 204, 204);
+}
+
+.item-contenedor1 {
+    background-color: rgb(193, 248, 10);
+    grid-area: container1;
+}
+
+.item-contenedor2 {
+    background-color: rgb(85, 200, 13);
+    grid-area: container2;
+}
+
+.item-contenedor3 {
+    background-color: green;
+    grid-area: container3;
+}
+
+.item-contenedor4 {
+    background-color: rgb(193, 248, 10); /*rgb(105, 228, 105)*/
+    grid-area: container4;
+}
+
+.item-contenedor5 {
+    background-color:  rgb(193, 248, 10);/* rgb(143, 239, 64)*/
+    grid-area: container5;
+}
+
+.item-contenedor6 {
+    background-color: rgb(85, 200, 13);
+    grid-area: container6;
+}
+
+.item-contenedor7 {
+    background-color: green;
+    grid-area: container7;
+}
+
+.areaReto {    
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: blue;
+}
+
+

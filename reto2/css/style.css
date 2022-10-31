@@ -1,0 +1,28 @@
+.contenedor {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: 150px 150px ;
+    grid-auto-rows: 150px;
+    grid-auto-flow: row;    
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    /* justify-content: center;
+    align-content: end; */
+    /* place-content: center;
+    justify-items: end;
+    align-items: start; */
+}
+
+.item {    
+    font-size: 4rem;
+    background-color: greenyellow;
+}
+
+.item-1, 
+.item-2,
+.item-3,
+.item-4 {
+    justify-self: end;
+    align-self: end;
+    background-color: green;
+} 

@@ -1,0 +1,40 @@
+.contenedor {
+    border: 5px solid #e17ee7;
+    background-color: #fff1ff;
+    /* Indica que se usa grid */
+    display: grid;
+    grid-template-rows: 100px 100px 100px;
+    grid-auto-columns: 100px;
+    grid-auto-flow: column;
+    gap: 20px; /*Para poner un mismo tamaño de espacio*/
+
+}
+
+.item {
+    font-size: 4rem; 
+    display: grid;
+    justify-items: end;
+    align-items: end;   
+}
+
+#verde-limon {
+    background-color: rgb(173, 236, 25);
+}
+
+#verde-pasto {
+    background-color: rgba(64, 188, 11, 0.879);
+}
+
+#verde-bandera {
+    background-color: rgb(2, 153, 2);
+}
+
+p {   
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 33px;
+    color: #fff1ff;    
+    background-color: green;
+    height: 50px;
+    width: 30px;
+    padding: 8px;
+}
